@@ -43,6 +43,30 @@ const giveBirthday = function(person) {
   }
 
 
+const marry = function(person1, person2){
+  person1.married = true;
+  person2.married = true;
+
+  person1.spouseName = getFullName(person2);
+
+  person2.spouseName = getFullName(person1);
+
+}
+
+const divorce = function(person1, person2) {
+  person1.married = false;
+  person2.married = false;
+  
+  delete person1.spouseName
+  delete person2.spouseName
+  
+}
+  
+
+
+
+
+
 
 // Our code here. Don't touch!
 if (typeof getFirstName === 'undefined') {
