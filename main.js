@@ -1,6 +1,46 @@
 // Your code here.
+// const humanBeings = {}
+
+// humanBeings.firstName  = 'Colin';
+// humanBeings.lastName = 'Jaffe';
+// humanBeings.fullName = humanBeings.firstName + ' ' + humanBeings.lastName;
+
+const getFirstName = function(obj) {
+  
+return obj.firstName;
+}
+
+const getLastName = function(obj) {
+
+  return obj.lastName;
+}
+
+const getFullName = function(obj) {
+  obj.fullName = obj.firstName + ' ' + obj.lastName
+  return obj.fullName;
+
+}
+
+const setFirstName = function(obj, name) {
+  obj.firstName = name;
+  
+    return obj; 
+  }
 
 
+const setAge = function(obj, num) {
+  obj.age = num
+  
+    return obj; 
+  }
+  
+const giveBirthday = function(person) {
+    if (person.age > 0) {
+      return person.age++
+    } else {
+      return person.age = 1
+    }
+  }
 
 
 
